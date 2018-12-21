@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#d3d3d3"
+android:gravity="left"
+android:paddingLeft="20dp" >
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="130dp"
+    android:layout_height="50dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="15dp"
+    android:gravity="center"
+    android:text="Fill Residency Details"
+    android:textSize="15dip" />
+
+<Spinner
+    android:id="@+id/spinnerCountry"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView"
+    android:layout_marginTop="28dp"
+    android:entries="@array/country_array" />
+
+<Spinner
+android:id="@+id/spinnerCity"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignLeft="@+id/spinnerCountry"
+android:layout_below="@+id/spinnerCountry"
+android:layout_marginTop="42dp"
+android:entries="@array/city_india" />
+
+<Button
+    android:id="@+id/btnSubmit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/spinnerCity"
+    android:layout_below="@+id/spinnerCity"
+    android:layout_marginTop="38dp"
+    android:paddingTop="20dp"
+    android:text="Submit Information" />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/spinnerCountry"
+    android:layout_below="@+id/textView"
+    android:text="Select City"
+    android:textSize="15dip" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/spinnerCity"
+    android:layout_below="@+id/spinnerCountry"
+    android:layout_marginTop="14dp"
+    android:text="Select Apartment" 
+    android:textSize="15dip" />
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="5dp"
+    android:background="#d3d3d3"
+    android:orientation="vertical"
+    android:paddingTop="25dp" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:textColor="#372c24" />
+
+    <EditText
+        android:id="@+id/reg_fullname"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="5dip"
+        android:ems="10"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile No"
+        android:textColor="#372c24" />
+
+    <EditText
+        android:id="@+id/reg_mob"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="5dip"
+        android:ems="10"
+        android:singleLine="true" />
+
+    <!-- Email Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Name of Resident (Whom to meet)"
+        android:textColor="#372c24" />
+
+    <EditText
+        android:id="@+id/resident"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="5dip"
+        android:singleLine="true" />
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Relation with Resident"
+        android:textColor="#372c24" />
+
+    <EditText
+        android:id="@+id/rel"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:singleLine="true" />
+    <!-- Password Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="Enter Password"
+        android:textColor="#372c24" />
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:password="true"
+        android:singleLine="true" />
+    <!-- Register Button -->
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Register Visitor Account" />
+
+    <!-- Link to Login Screen -->
+
+    <TextView
+        android:id="@+id/link_to_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dip"
+        android:layout_marginTop="40dip"
+        android:layout_weight="0.40"
+        android:gravity="center"
+        android:text="Already has account! Login here"
+        android:textColor="#025f7c"
+        android:textSize="20dip" />
+
+</LinearLayout>
